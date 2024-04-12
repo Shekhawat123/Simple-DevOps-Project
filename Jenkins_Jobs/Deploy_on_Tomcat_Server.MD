@@ -30,7 +30,7 @@
    - *Source Code Management:*
       - Repository: `https://github.com/yankils/hello-world.git`
       - Branches to build : `*/master`  
-   - *Poll SCM* :      - `* * * *`
+   - *Poll SCM* :      - `* * * * *`
 
    - *Build:*
      - Root POM:`pom.xml`
@@ -38,7 +38,7 @@
 
  - *Post-build Actions*
    - Deploy war/ear to container
-      - WAR/EAR files : `**/*.war`
+      - WAR/EAR files : `/webapp/target/webapp.war`
       - Containers : `Tomcat 8.x`
          - Credentials: `deployer` (user created on above)
          - Tomcat URL : `http://<PUBLIC_IP>:8080`
